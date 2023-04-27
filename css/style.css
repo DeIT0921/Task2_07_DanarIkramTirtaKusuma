@@ -30,12 +30,14 @@ body {
   margin: 0 5px;
 }
 .hero {
-  background-image: url(../img/Wallpaper22.png);
+  background-image: url(../img/Wallpaper15.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   z-index: 2;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
 }
 .hero::before {
   content: "";
@@ -49,6 +51,12 @@ body {
 }
 .hero .header {
   font-weight: bold;
+}
+.hero.fade {
+  opacity: 0;
+}
+.hero.fade-in {
+  opacity: 1;
 }
 section {
   padding-top: 120px;
